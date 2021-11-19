@@ -1,0 +1,6 @@
+pip -m install numpy
+pip -m install tensorflow
+pip -m install keras
+pip -m install scikit-learn
+pip -m install keras_self_attention
+pip -m install graphviz
