@@ -382,7 +382,9 @@ def singleSentenceParsingPage():
         st.markdown(htmlString, unsafe_allow_html = True)
         st.markdown("<hr>", unsafe_allow_html = True)
         #st.graphviz_chart(graph)
-        st.pyplot(graph)
+
+        plt.plot(graph)
+        st.pyplot()
 
 st.header("Amharic Dependency Parser System")
 st.markdown("<hr>", unsafe_allow_html=True)
@@ -403,6 +405,7 @@ with st.spinner("Loading modules ..."):
     from keras import Model
     from keras_self_attention import SeqSelfAttention
     import graphviz as graphviz
+    import matplotlib.pyplot as plt
 
 option = st.sidebar.radio("", ["Single sentence parser", "Batch parser"])
 if option == "Single sentence parser":
