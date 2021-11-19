@@ -4,4 +4,4 @@ keras
 scikit-learn
 keras_self_attention
 matplotlib
-graphviz
+graphviz == 0.18.2
