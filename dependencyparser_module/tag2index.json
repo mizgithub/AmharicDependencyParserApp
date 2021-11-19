@@ -1,0 +1,1 @@
+{"ADJ": 3, "ADP": 4, "PRON": 5, "IRLP": 6, "DET": 7, "SCONJ": 8, "RLP": 9, "PUNCT": 10, "NEG": 11, "VERB": 12, "ADV": 13, "AUX": 14, "NUM": 15, "ACC": 16, "SUBJC": 17, "CCONJ": 18, "OBJC": 19, "PROPN": 20, "NCM": 21, "POSM": 22, "INTJ": 23, "NOUN": 24, "PART": 25, "-PAD-": 0, "-OOV-": 1, "-root-": 2}
