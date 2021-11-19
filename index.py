@@ -381,7 +381,9 @@ def singleSentenceParsingPage():
         
         st.markdown(htmlString, unsafe_allow_html = True)
         st.markdown("<hr>", unsafe_allow_html = True)
-        st.graphviz_chart(graph)
+        #st.graphviz_chart(graph)
+        st.pyplot(graph)
+
 st.header("Amharic Dependency Parser System")
 st.markdown("<hr>", unsafe_allow_html=True)
 
