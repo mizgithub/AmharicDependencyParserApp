@@ -3,7 +3,7 @@ import streamlit as st
 
 
 #**************** POS tagger*********************************************
-def posTagModel(input_dim = 13607, hidden_neurons = 512, output_dim = 29):
+def posTagModel(input_dim = 9160, hidden_neurons = 128, output_dim = 23):
     model = Sequential([
         Dense(hidden_neurons, input_dim = input_dim),
         Activation('relu'),
@@ -39,7 +39,7 @@ def transform_to_Predictable_dataset(sent):
 def POS_tag(sentence):
     #loading model, dict_vectorizer and label_encoder
     model = posTagModel()
-    model.load_weights("./POS_tag_module/tagClassifier.h5")
+    model.load_weights("./POS_tag_module/tagClassifier2.h5")
 
     vect_file = open("./POS_tag_module//dict_vectorizer.pkl", "rb")
     dic_vectorizer = pickle.load(vect_file)
