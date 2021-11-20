@@ -409,6 +409,7 @@ option = st.sidebar.radio("", ["Single sentence parser", "Batch parser"])
 if option == "Single sentence parser":
     singleSentenceParsingPage();
 else:
+    st.subheader("Batch parser module")
     st.write("Contact us on email")
 
 st.markdown("<hr><br><br><br><br><br><center><p>Developed by Mizanu Zelalem<br><i>Faculty of computing and Informatics, Jimma Institute of Technology, Jimma university, Jimma, Ethiopia</i><br><i>mizanu143@gmail.com</i></p></center>", unsafe_allow_html = True)
