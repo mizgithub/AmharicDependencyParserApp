@@ -356,7 +356,7 @@ def singleSentenceParsingPage():
             htmlString+="</table>"
             # st.markdown(htmlString,unsafe_allow_html = True)
             # st.markdown("<hr>", unsafe_allow_html = True)
-            graph = graphviz.Digraph(figure_or_dot=str, use_container_width = True)
+            graph = graphviz.Digraph('str', True)
             
             
             # graph.node("ROOT")
