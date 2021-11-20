@@ -356,13 +356,13 @@ def singleSentenceParsingPage():
             htmlString+="</table>"
             # st.markdown(htmlString,unsafe_allow_html = True)
             # st.markdown("<hr>", unsafe_allow_html = True)
-            graph = graphviz.Digraph('str', True)
+            graph = graphviz.Digraph()
             
             
-            # graph.node("ROOT")
-            # for i in range(len(result)):
-            #     _,w,wp,hi,_ = result[i].split("\t")
-            #     graph.node(w+"["+wp+"]")
+            graph.node("ROOT")
+            for i in range(len(result)):
+                _,w,wp,hi,_ = result[i].split("\t")
+                graph.node(w+"["+wp+"]")
 
             
             for i in range(len(result)):
@@ -378,11 +378,11 @@ def singleSentenceParsingPage():
             #st.graphviz_chart(graph)
 
         
-        
+        #st.write(graph.source)
         st.markdown(htmlString, unsafe_allow_html = True)
         st.markdown("<hr>", unsafe_allow_html = True)
         st.subheader("Graph Representation")
-        st.graphviz_chart(graph)
+        st.graphviz_chart(graph.source)
     
         st.graphviz_chart('''
             digraph {
