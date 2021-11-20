@@ -359,10 +359,10 @@ def singleSentenceParsingPage():
             graph = graphviz.Digraph()
             
             
-            graph.node("ROOT")
-            for i in range(len(result)):
-                _,w,wp,hi,_ = result[i].split("\t")
-                graph.node(w+"["+wp+"]")
+            # graph.node("ROOT")
+            # for i in range(len(result)):
+            #     _,w,wp,hi,_ = result[i].split("\t")
+            #     graph.node(w+"["+wp+"]")
 
             
             for i in range(len(result)):
