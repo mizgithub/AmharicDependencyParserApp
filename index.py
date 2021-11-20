@@ -381,8 +381,9 @@ def singleSentenceParsingPage():
         
         st.markdown(htmlString, unsafe_allow_html = True)
         st.markdown("<hr>", unsafe_allow_html = True)
+        st.subheader("Graph Representation")
         #st.graphviz_chart(graph)
-
+    
         st.graphviz_chart('''
             digraph {
                 run -> intr
