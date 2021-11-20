@@ -383,26 +383,6 @@ def singleSentenceParsingPage():
         st.markdown("<hr>", unsafe_allow_html = True)
         st.subheader("Graph Representation")
         st.graphviz_chart(graph.source)
-    
-        st.graphviz_chart('''
-            digraph {
-                run -> intr
-                intr -> runbl
-                runbl -> run
-                run -> kernel
-                kernel -> zombie
-                kernel -> sleep
-                kernel -> runmem
-                sleep -> swap
-                swap -> runswap
-                runswap -> new
-                runswap -> runmem
-                new -> runmem
-                sleep -> runmem
-            }
-        ''')
-
-        
 
 st.header("Amharic Dependency Parser System")
 st.markdown("<hr>", unsafe_allow_html=True)
